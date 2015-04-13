@@ -15,6 +15,6 @@ def tracks_view(request, title):
 
 	json_data = json.dumps(data)
 
-	return HttpResponse(json_data, content_type='application/json')
+	#return HttpResponse(json_data, content_type='application/json')
 
 	return render(request, 'track.html', {'track': track})
